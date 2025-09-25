@@ -5,51 +5,52 @@
   <title>Kesley Rana | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="bg-gradient-to-br from-indigo-900 via-gray-900 to-black text-white font-sans">
   <!-- Hero -->
-  <section class="bg-gradient-to-r from-indigo-600 to-blue-500 text-white py-20">
-    <div class="max-w-4xl mx-auto text-center">
-      <h1 class="text-5xl font-bold mb-4">Kesley Rana</h1>
-      <p class="text-xl">Computer Engineering Student • Embedded Systems & Test Automation</p>
+  <section class="relative h-screen flex items-center justify-center text-center">
+    <div class="absolute inset-0 bg-gradient-to-r from-indigo-700/40 to-blue-500/40 backdrop-blur-sm"></div>
+    <div class="relative z-10">
+      <h1 class="text-6xl font-extrabold mb-4 animate-fadeIn">Kesley Rana</h1>
+      <p class="text-2xl text-gray-200">Computer Engineering Student • Embedded Systems & Test Automation</p>
       <div class="mt-6">
-        <a href="mailto:kesleyr@sfu.ca" class="bg-white text-indigo-600 px-6 py-2 rounded-lg font-semibold shadow hover:bg-gray-100">Contact Me</a>
+        <a href="mailto:kesleyr@sfu.ca" class="bg-white text-indigo-700 px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition">Contact Me</a>
       </div>
     </div>
   </section>
 
-  <div class="max-w-5xl mx-auto p-8 space-y-12">
+  <div class="max-w-5xl mx-auto p-8 space-y-16">
     <!-- Skills -->
-    <section>
+    <section class="bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl">
       <h2 class="text-3xl font-bold mb-6">Skills</h2>
       <div class="flex flex-wrap gap-3">
-        <span class="px-4 py-2 bg-white shadow rounded-full">C</span>
-        <span class="px-4 py-2 bg-white shadow rounded-full">C++</span>
-        <span class="px-4 py-2 bg-white shadow rounded-full">Python</span>
-        <span class="px-4 py-2 bg-white shadow rounded-full">RISC-V</span>
-        <span class="px-4 py-2 bg-white shadow rounded-full">STM32</span>
-        <span class="px-4 py-2 bg-white shadow rounded-full">FPGA</span>
-        <span class="px-4 py-2 bg-white shadow rounded-full">Linux</span>
-        <span class="px-4 py-2 bg-white shadow rounded-full">Docker</span>
+        <span class="px-4 py-2 bg-indigo-600 rounded-full">C</span>
+        <span class="px-4 py-2 bg-indigo-600 rounded-full">C++</span>
+        <span class="px-4 py-2 bg-indigo-600 rounded-full">Python</span>
+        <span class="px-4 py-2 bg-indigo-600 rounded-full">RISC-V</span>
+        <span class="px-4 py-2 bg-indigo-600 rounded-full">STM32</span>
+        <span class="px-4 py-2 bg-indigo-600 rounded-full">FPGA</span>
+        <span class="px-4 py-2 bg-indigo-600 rounded-full">Linux</span>
+        <span class="px-4 py-2 bg-indigo-600 rounded-full">Docker</span>
       </div>
     </section>
 
     <!-- Experience -->
     <section>
-      <h2 class="text-3xl font-bold mb-6">Experience</h2>
-      <div class="grid gap-6 md:grid-cols-2">
-        <div class="bg-white p-6 rounded-xl shadow">
+      <h2 class="text-3xl font-bold mb-8">Experience</h2>
+      <div class="grid gap-8 md:grid-cols-2">
+        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
           <h3 class="text-xl font-semibold">NETGEAR – Hardware Engineer Intern</h3>
-          <p class="text-gray-500">Sep 2024 – Apr 2025</p>
-          <ul class="list-disc ml-6 mt-3 space-y-1">
+          <p class="text-gray-300">Sep 2024 – Apr 2025</p>
+          <ul class="list-disc ml-6 mt-3 space-y-2 text-gray-200">
             <li>Debugged PCBA hardware with oscilloscopes, multimeters, and power supplies.</li>
             <li>Built Python automation (PyVISA + SCPI) cutting test time by 30%.</li>
             <li>Collaborated with firmware teams to resolve bugs, improving timelines by 40%.</li>
           </ul>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow">
+        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
           <h3 class="text-xl font-semibold">NETGEAR – QA Software Test Engineer Intern</h3>
-          <p class="text-gray-500">Jan 2021 – Aug 2021</p>
-          <ul class="list-disc ml-6 mt-3 space-y-1">
+          <p class="text-gray-300">Jan 2021 – Aug 2021</p>
+          <ul class="list-disc ml-6 mt-3 space-y-2 text-gray-200">
             <li>Tracked 100+ issues with 95% reporting accuracy.</li>
             <li>Developed Python automation to reduce Wi-Fi testing by 50%.</li>
             <li>Analyzed network traffic with iperf and tcpdump to detect latency issues.</li>
@@ -60,34 +61,34 @@
 
     <!-- Projects -->
     <section>
-      <h2 class="text-3xl font-bold mb-6">Projects</h2>
-      <div class="grid gap-6 md:grid-cols-2">
-        <div class="bg-white p-6 rounded-xl shadow">
+      <h2 class="text-3xl font-bold mb-8">Projects</h2>
+      <div class="grid gap-8 md:grid-cols-2">
+        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
           <h3 class="text-lg font-semibold">WireLess – Auto Wiring Breadboard</h3>
-          <p class="text-gray-600 mt-2">STM32 firmware, GPIO drivers, UART parser for dynamic circuit routing.</p>
-          <a href="https://github.com/kesrana" class="text-blue-600 hover:underline mt-3 block">View on GitHub</a>
+          <p class="text-gray-200 mt-2">STM32 firmware, GPIO drivers, UART parser for dynamic circuit routing.</p>
+          <a href="https://github.com/kesrana" class="text-indigo-400 hover:underline mt-3 block">View on GitHub</a>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow">
+        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
           <h3 class="text-lg font-semibold">Multipurpose Smoke & Fire Detector</h3>
-          <p class="text-gray-600 mt-2">BeagleBone Green, multithreading, sensor fusion for hazard detection.</p>
-          <a href="https://github.com/kesrana" class="text-blue-600 hover:underline mt-3 block">View on GitHub</a>
+          <p class="text-gray-200 mt-2">BeagleBone Green, multithreading, sensor fusion for hazard detection.</p>
+          <a href="https://github.com/kesrana" class="text-indigo-400 hover:underline mt-3 block">View on GitHub</a>
         </div>
       </div>
     </section>
 
     <!-- Education -->
-    <section>
-      <h2 class="text-3xl font-bold mb-6">Education</h2>
+    <section class="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg">
+      <h2 class="text-3xl font-bold mb-4">Education</h2>
       <p><strong>Simon Fraser University</strong> – BASc Computer Engineering, Co-op (Expected Aug 2026)</p>
     </section>
 
     <!-- Contact -->
-    <section>
-      <h2 class="text-3xl font-bold mb-6">Contact</h2>
-      <p>
-        <a href="mailto:kesleyr@sfu.ca" class="text-blue-600 hover:underline">kesleyr@sfu.ca</a> |
-        <a href="https://github.com/kesrana" class="text-blue-600 hover:underline">GitHub</a> |
-        <a href="https://linkedin.com/in/YOUR-LINK" class="text-blue-600 hover:underline">LinkedIn</a>
+    <section class="text-center">
+      <h2 class="text-3xl font-bold mb-4">Contact</h2>
+      <p class="space-x-4">
+        <a href="mailto:kesleyr@sfu.ca" class="text-indigo-400 hover:underline">kesleyr@sfu.ca</a>
+        <a href="https://github.com/kesrana" class="text-indigo-400 hover:underline">GitHub</a>
+        <a href="https://linkedin.com/in/YOUR-LINK" class="text-indigo-400 hover:underline">LinkedIn</a>
       </p>
     </section>
   </div>
