@@ -5,63 +5,85 @@
   <title>Kesley Rana | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <div class="max-w-4xl mx-auto p-6">
-    <header class="mb-10">
-      <h1 class="text-4xl font-bold text-gray-900">Kesley Rana</h1>
-      <p class="text-lg text-gray-600">Computer Engineering Student | Embedded Systems & Test Automation</p>
-    </header>
-
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold border-b-2 border-gray-300 pb-2 mb-4">Skills</h2>
-      <p><span class="font-semibold">Languages:</span> C, C++, Python, RISC-V, MIPS, VHDL, Verilog, HTML, CSS</p>
-      <p><span class="font-semibold">Embedded:</span> STM32 (HAL, drivers, RTOS), UART, I2C, ADC, FPGA</p>
-      <p><span class="font-semibold">Tools:</span> Linux, Git, Docker, STM32CubeIDE, Oscilloscope, Power Analyzer</p>
-    </section>
-
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold border-b-2 border-gray-300 pb-2 mb-4">Experience</h2>
-      <div class="mb-6">
-        <h3 class="text-xl font-bold">NETGEAR – Hardware Engineer Intern</h3>
-        <p class="text-gray-500">Sep 2024 – Apr 2025</p>
-        <ul class="list-disc ml-6 mt-2">
-          <li>Debugged PCBA hardware with oscilloscopes, multimeters, and power supplies.</li>
-          <li>Automated testing in Python (PyVISA + SCPI), reducing test time by 30%.</li>
-          <li>Collaborated with firmware teams to resolve bugs, improving timelines by 40%.</li>
-        </ul>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-indigo-600 to-blue-500 text-white py-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-4">Kesley Rana</h1>
+      <p class="text-xl">Computer Engineering Student • Embedded Systems & Test Automation</p>
+      <div class="mt-6">
+        <a href="mailto:kesleyr@sfu.ca" class="bg-white text-indigo-600 px-6 py-2 rounded-lg font-semibold shadow hover:bg-gray-100">Contact Me</a>
       </div>
-      <div>
-        <h3 class="text-xl font-bold">NETGEAR – QA Software Test Engineer Intern</h3>
-        <p class="text-gray-500">Jan 2021 – Aug 2021</p>
-        <ul class="list-disc ml-6 mt-2">
-          <li>Tracked 100+ issues with 95% reporting accuracy.</li>
-          <li>Developed Python automation to reduce Wi-Fi testing by 50%.</li>
-          <li>Analyzed network traffic with iperf and tcpdump to detect latency issues.</li>
-        </ul>
+    </div>
+  </section>
+
+  <div class="max-w-5xl mx-auto p-8 space-y-12">
+    <!-- Skills -->
+    <section>
+      <h2 class="text-3xl font-bold mb-6">Skills</h2>
+      <div class="flex flex-wrap gap-3">
+        <span class="px-4 py-2 bg-white shadow rounded-full">C</span>
+        <span class="px-4 py-2 bg-white shadow rounded-full">C++</span>
+        <span class="px-4 py-2 bg-white shadow rounded-full">Python</span>
+        <span class="px-4 py-2 bg-white shadow rounded-full">RISC-V</span>
+        <span class="px-4 py-2 bg-white shadow rounded-full">STM32</span>
+        <span class="px-4 py-2 bg-white shadow rounded-full">FPGA</span>
+        <span class="px-4 py-2 bg-white shadow rounded-full">Linux</span>
+        <span class="px-4 py-2 bg-white shadow rounded-full">Docker</span>
       </div>
     </section>
 
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold border-b-2 border-gray-300 pb-2 mb-4">Projects</h2>
-      <div class="mb-4">
-        <h3 class="text-lg font-semibold">WireLess – Auto Wiring Breadboard</h3>
-        <p class="text-gray-600">STM32 firmware, GPIO drivers, UART parser for dynamic circuit routing.</p>
-        <a class="text-blue-600 hover:underline" href="https://github.com/kesrana" target="_blank">View on GitHub</a>
-      </div>
-      <div>
-        <h3 class="text-lg font-semibold">Multipurpose Smoke & Fire Detector</h3>
-        <p class="text-gray-600">BeagleBone Green, multithreading, sensor fusion for hazard detection.</p>
-        <a class="text-blue-600 hover:underline" href="https://github.com/kesrana" target="_blank">View on GitHub</a>
+    <!-- Experience -->
+    <section>
+      <h2 class="text-3xl font-bold mb-6">Experience</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold">NETGEAR – Hardware Engineer Intern</h3>
+          <p class="text-gray-500">Sep 2024 – Apr 2025</p>
+          <ul class="list-disc ml-6 mt-3 space-y-1">
+            <li>Debugged PCBA hardware with oscilloscopes, multimeters, and power supplies.</li>
+            <li>Built Python automation (PyVISA + SCPI) cutting test time by 30%.</li>
+            <li>Collaborated with firmware teams to resolve bugs, improving timelines by 40%.</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold">NETGEAR – QA Software Test Engineer Intern</h3>
+          <p class="text-gray-500">Jan 2021 – Aug 2021</p>
+          <ul class="list-disc ml-6 mt-3 space-y-1">
+            <li>Tracked 100+ issues with 95% reporting accuracy.</li>
+            <li>Developed Python automation to reduce Wi-Fi testing by 50%.</li>
+            <li>Analyzed network traffic with iperf and tcpdump to detect latency issues.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold border-b-2 border-gray-300 pb-2 mb-4">Education</h2>
+    <!-- Projects -->
+    <section>
+      <h2 class="text-3xl font-bold mb-6">Projects</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-lg font-semibold">WireLess – Auto Wiring Breadboard</h3>
+          <p class="text-gray-600 mt-2">STM32 firmware, GPIO drivers, UART parser for dynamic circuit routing.</p>
+          <a href="https://github.com/kesrana" class="text-blue-600 hover:underline mt-3 block">View on GitHub</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-lg font-semibold">Multipurpose Smoke & Fire Detector</h3>
+          <p class="text-gray-600 mt-2">BeagleBone Green, multithreading, sensor fusion for hazard detection.</p>
+          <a href="https://github.com/kesrana" class="text-blue-600 hover:underline mt-3 block">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 class="text-3xl font-bold mb-6">Education</h2>
       <p><strong>Simon Fraser University</strong> – BASc Computer Engineering, Co-op (Expected Aug 2026)</p>
     </section>
 
+    <!-- Contact -->
     <section>
-      <h2 class="text-2xl font-semibold border-b-2 border-gray-300 pb-2 mb-4">Contact</h2>
+      <h2 class="text-3xl font-bold mb-6">Contact</h2>
       <p>
         <a href="mailto:kesleyr@sfu.ca" class="text-blue-600 hover:underline">kesleyr@sfu.ca</a> |
         <a href="https://github.com/kesrana" class="text-blue-600 hover:underline">GitHub</a> |
